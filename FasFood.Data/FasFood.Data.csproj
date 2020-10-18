@@ -51,6 +51,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FasFoodDbContext.cs" />
+    <Compile Include="Infrastrueture\DbFactory.cs" />
+    <Compile Include="Infrastrueture\Disposable.cs" />
+    <Compile Include="Infrastrueture\IDbFactory.cs" />
+    <Compile Include="Infrastrueture\IRepository.cs" />
+    <Compile Include="Infrastrueture\IUnitOfWork.cs" />
+    <Compile Include="Infrastrueture\RepositoryBase.cs" />
+    <Compile Include="Infrastrueture\UnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -62,6 +70,9 @@
       <Project>{41a9b60b-9712-4e31-8a0a-4e5b89cba1d1}</Project>
       <Name>FasFood.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
